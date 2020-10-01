@@ -14,6 +14,6 @@ void findPrime(int n) {
 	
 	for(i=3; i*i<=n; i+=2)
 		if(isPrime[i])
-		for(j=i*i; j<=n; j+=i)
+		for(j=i*i; j<=n; j=j+i)
 			isPrime[j] = 0;
 }
